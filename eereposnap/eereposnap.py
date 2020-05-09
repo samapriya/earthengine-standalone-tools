@@ -74,7 +74,7 @@ def eereposnap(destination, mode):
     source = soup.find("script", text=re.compile("window._ee_flag_initialData"))
     try:
         json_data = json.loads(
-            source.text.replace("window._ee_flag_initialData = ", "")
+            source.string.replace("window._ee_flag_initialData = ", "")
             .replace(";", "")
             .strip()
         )
