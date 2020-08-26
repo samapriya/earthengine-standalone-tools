@@ -1,13 +1,22 @@
 # earthengine-standalone-tools
-Standalone tools for Google Earth Engine operations. To get all the tools clone the repo
+Standalone tools for Google Earth Engine operations. To get all the tools clone the repo and install requirements
 
 ```bash
 git clone https://github.com/samapriya/earthengine-standalone-tools.git
 cd earthengine-standalone-tools
+pip install requirements.txt
 ```
 
 ## eereposnap : [Read the Medium Post Here](https://medium.com/@samapriyaroy/getting-git-right-on-google-earth-engine-e853f6551889)
-Tool to create snapshots of earthengine user's Owner, Reader and Writer scripts. Handles issues with git clone in windows and managing repo and permission type.
+Tool to create snapshots of earthengine user's Owner, Reader and Writer scripts. Handles issues with git clone in windows and managing repo and permission type. 
+
+#### To Setup 
+Make sure you have python3 installed and then migrate to the folder inside the cloned repo
+
+```bash
+git clone https://github.com/samapriya/earthengine-standalone-tools.git
+cd earthengine-standalone-tools/eereposnap
+```
 
 ![repo_extract_headless](https://user-images.githubusercontent.com/6677629/75488708-d440f680-597e-11ea-8590-7d2ee4a90f0d.gif)
 
@@ -22,11 +31,12 @@ and so on however what if you want some variety and turns out there is a whole a
 
 This too allows you to convert a snazzy map url directly into a Google Earth Engine Snippet and use it by simply using a snazzy maps url. Here are a few steps
 
-#### To Intsall 
+#### To Setup 
 Make sure you have python3 installed and then migrate to the folder inside the cloned repo
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/samapriya/earthengine-standalone-tools.git
+cd earthengine-standalone-tools/eebasemaps
 ```
 
 #### Usage
@@ -37,4 +47,12 @@ pip install -r requirements.txt
 * Use the url to generate or export the GEE snippet for the Snazzy map and then use it in Google Earth Engine.
 
 ![snazzy_maps_text](https://user-images.githubusercontent.com/6677629/91254270-ecc47a80-e72f-11ea-97d1-a96695473edc.gif)
+
+
+### Changelog
+
+#### 2020-08-26
+* Added eebasemap tools for snazzy maps in GEE
+* Updated Selenium fetch tools
+* Removed dependency on pendulum library
 
