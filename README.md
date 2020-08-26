@@ -1,4 +1,7 @@
 # earthengine-standalone-tools
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4001360.svg)](https://doi.org/10.5281/zenodo.4001360)
+
 Standalone tools for Google Earth Engine operations. To get all the tools clone the repo and install requirements
 
 ```bash
