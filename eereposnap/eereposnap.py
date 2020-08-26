@@ -10,12 +10,14 @@ import requests
 import re
 import shutil
 import lxml
+from datetime import datetime
 from bs4 import BeautifulSoup
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 path = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(path)
 
-print("Today is " + str(pendulum.now()).split("T")[0])
+now = datetime.now()
+print("Today is " + datetime.today().strftime('%Y-%m-%d'))
 
 from selenium import webdriver
 from selenium.webdriver import Firefox
